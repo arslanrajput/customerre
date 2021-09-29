@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/rely_ques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_xlarge">
+
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTitlevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:text="Q1:"
+                    android:textColor="@color/color_app"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/googlesans_bold"
+                    android:maxLines="10"
+                    android:minLines="2"
+                    android:singleLine="false"
+                    android:text="Thinking about the overall level of service we provided,is Amlak Finnace PJSC a firm that you would recommend if asked?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/color_app"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_ansrone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_alignEnd="@id/line1"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/button_bg" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frameAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rely_ques"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/first_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_nosure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Sure"
+                android:textColor="@color/color_app"
+                android:textStyle="bold" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/emojiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uD83D\uDD25" />
+
+            <ImageView
+                android:id="@+id/icLOC"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/button_bt" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/second_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/color_app"
+                android:textStyle="bold" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/emojiTextViewww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uD83D\uDD25" />
+
+            <ImageView
+                android:id="@+id/icAGENT"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/button_bt" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/third_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="@color/color_app"
+                android:textStyle="bold" />
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/emojiTextVieww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uD83D\uDD25" />
+            <ImageView
+                android:id="@+id/icACC"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/button_bt" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

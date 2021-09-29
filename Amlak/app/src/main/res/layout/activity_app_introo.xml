@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:background="@color/md_grey_100"
+    tools:context=".activity.AppIntroo">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:minHeight="@dimen/spacing_xmlarge"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/linee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_rounded_white"
+            android:padding="@dimen/spacing_xmedium"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_febback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_rounded_white"
+            android:padding="@dimen/spacing_xmedium"
+            android:text="Go Feebback"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_rounded_white"
+            android:padding="@dimen/spacing_xmedium"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_got_itt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/btn_rounded_white"-->
+<!--                android:text="Previous"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/dark_grey"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_got_it"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/btn_rounded_white"-->
+<!--                android:text="Next"-->
+<!--                android:visibility="gone"-->
+<!--                android:textColor="@color/dark_grey"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_next"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:background="@color/color_app"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Perivous"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="10dp"-->
+<!--                tools:ignore="HardcodedText" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_feedback"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:background="@color/color_app"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Go To Feebback"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="HardcodedText" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btn_nextt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:background="@color/color_app"-->
+<!--                android:text="Next"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="10dp"-->
+<!--                tools:ignore="HardcodedText" />-->
+
+
+<!--        </RelativeLayout>-->
+
+
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="1" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_skip"-->
+<!--            style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SKIP"-->
+<!--            android:textColor="@color/dark_grey" />-->
